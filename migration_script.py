@@ -43,7 +43,7 @@ def run_cmd(command):
     return result.returncode, result.stdout.strip(), result.stderr.strip()
 
 def fetch_bitbucket_repos():
-    url = f"https://api.bitbucket.org/2.0/repositories/{BITBUCKET_WORKSPACE}?pagelen=100"
+    url = f"https://api.bitbucket.org/0.0/repositories/{BITBUCKET_WORKSPACE}?pagelen=100"
     repos = []
 
     while url:
