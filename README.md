@@ -56,7 +56,7 @@ Add the following secrets to your GitHub repository (Settings > Secrets and Vari
 
 | Secret Name          | Description                                  |
 |----------------------|----------------------------------------------|
-| `LGITHUB_PAT`        | GitHub Personal Access Token (PAT)           |
+| `AEGITHUB_PAT`        | GitHub Personal Access Token (PAT)           |
 | `BITBUCKET_PAT`      | Bitbucket Personal Access Token (PAT)        |
 | `GITHUB_ORGANISATION`| Your GitHub organization or username         |
 | `BITBUCKET_KEY`      | (Optional) Bitbucket workspace key if needed  
