@@ -67,7 +67,7 @@ Add the following secrets to your GitHub repository (Settings > Secrets and Vari
 
 ### 2. Update `migration.yml` if needed
 
-Make sure the environment variables in the workflow YAML (`migration.yml`) correctly reference your secrets, e.g.:
+Verify that the environment variables defined in the migration.yml workflow file accurately map to your configured GitHub secrets, such as:
 
 ```yaml
 env:
