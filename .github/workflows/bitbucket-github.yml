@@ -25,13 +25,13 @@ jobs:
       - name: Authenticate GitHub CLI
         run: gh auth setup-git
         env:
-          GH_TOKEN: ${{ secrets.LGITHUB_PAT }}  # Use your GitHub PAT here
+          GH_TOKEN: ${{ secrets.AEGITHUB_PAT }}  # Use your GitHub PAT here
       - name: Run migration script
         run: |
           ls -la  # Debugging: show files in root
           python migration_script.py
         env:
-          GITHUB_PAT: ${{ secrets.LGITHUB_PAT }}
+          GITHUB_PAT: ${{ secrets.AEGITHUB_PAT }}
           BITBUCKET_PAT: ${{ secrets.BITBUCKET_PAT }}
           GITHUB_ORGANISATION: ${{ secrets.GITHUB_ORGANISATION }}
           BITBUCKET_KEY: ${{ secrets.BITBUCKET_KEY }}
